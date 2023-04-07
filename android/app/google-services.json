@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "205068723361",
+    "firebase_url": "https://appjam-f61-fbd96-default-rtdb.firebaseio.com",
+    "project_id": "appjam-f61-fbd96",
+    "storage_bucket": "appjam-f61-fbd96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:205068723361:android:a6e083f0a77c390572fce0",
+        "android_client_info": {
+          "package_name": "com.appjamf_61.appjam_f61"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "205068723361-j43h6rer0kqd968b0lqfvk71f9qsmgs3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNP396fyk_t18Hgrs9hVVv9WpVl2ofMj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "205068723361-j43h6rer0kqd968b0lqfvk71f9qsmgs3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
