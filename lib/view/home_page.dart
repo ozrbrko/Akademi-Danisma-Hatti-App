@@ -171,7 +171,7 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                 );
                               } else{
-                                return  Center(child: Text("there_is_no",style: TextStyle(fontSize: 17,fontFamily: themeFontLight),));
+                                return  Center(child: Text("Liste Henüz Boş !",style: TextStyle(fontSize: 17,fontFamily: themeFontLight),));
                               }
 
                             } else {

@@ -110,7 +110,7 @@ class _MyQuestionsState extends State<MyQuestions> {
                                                             Text(
                                                               overflow: TextOverflow.ellipsis,
                                                               question.question_writer!,
-                                                              style: TextStyle(color: AppColors.appThemeClr,fontFamily: themeFontBold,fontSize: 16),
+                                                              style: TextStyle(color: Color(0xff4285F4),fontFamily: themeFontBold,fontSize: 16),
                                                             ),
 
                                                             SizedBox(height: 2,),
@@ -167,7 +167,7 @@ class _MyQuestionsState extends State<MyQuestions> {
                                 ),
                               );
                             } else{
-                              return  Center(child: Text("there_is_no",style: TextStyle(fontSize: 17,fontFamily: themeFontLight),));
+                              return  Center(child: Text("Liste Henüz Boş !",style: TextStyle(fontSize: 17,fontFamily: themeFontLight),));
                             }
 
                           } else {
