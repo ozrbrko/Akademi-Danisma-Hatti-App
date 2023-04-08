@@ -1,9 +1,12 @@
 import 'dart:io';
+import 'package:appjam_f61/view/login.dart';
+import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 import 'package:form_field_validator/form_field_validator.dart';
 import '../../constants/colors.dart';
 import '../../constants/fonts.dart';
 import '../../responsive/frame_size.dart';
+import '../../utils/config.dart';
 
 List<File> imageList = [];
 List<String> imageListPath = [];
@@ -126,12 +129,33 @@ ElevatedButton customElevatedButton(String text, Color btnColor, Color textColor
   );
 }
 
+ElevatedButton customElevatedButtonNotFill(String text, Color btnColor, Color textColor,
+    double btnRadius, String fontFamily, Function()? onPressed) {
+  return ElevatedButton(
+    onPressed: onPressed,
+    style: ButtonStyle(
+        backgroundColor: MaterialStateProperty.all(Colors.white),
+        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+            RoundedRectangleBorder(
+
+              borderRadius: BorderRadius.circular(btnRadius),
+              side: BorderSide(color: btnColor, width: 1),
+
+            ),
+        )),
+    child: Text(
+      text,
+      style:
+      TextStyle(fontFamily: fontFamily, fontSize: 20.0, color: textColor),
+    ),
+  );
+}
 
 
 
 
 AppBar customAppBar(
-    BuildContext context, bool backButton, String appText, bool profileIcon) {
+    BuildContext context, bool backButton, String appText, bool exitButton) {
   return AppBar(
     automaticallyImplyLeading: backButton,
     centerTitle: true,
@@ -143,19 +167,19 @@ AppBar customAppBar(
           fontFamily: themeFontRegular),
     ),
     actions: [
-      profileIcon
+      exitButton
           ? InkWell(
               onTap: () {
-                Navigator.pushNamed(context, '/profile');
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>Login()));
               },
               child: Container(
-                  width: FrameSize.screenWidth / 6, child: Icon(Icons.person)))
+                  width: FrameSize.screenWidth / 6, child: Icon(Icons.exit_to_app)))
           : Container(width: 0, height: 0),
       SizedBox(
         width: 15,
       )
     ],
-    backgroundColor: AppColors.appThemeClr,
+    backgroundColor: Color(0xffFBBC05),
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.vertical(
         bottom: Radius.circular(25),
@@ -185,5 +209,106 @@ TextFormField ContentTextFormField(
             fontSize: 16.0)),
 
 
+  );
+}
+
+
+DropdownButtonFormField2 DropdownFormFieldType(
+    TextEditingController txtController) {
+  return DropdownButtonFormField2(
+    decoration: InputDecoration(
+        contentPadding:
+        const EdgeInsets.symmetric(vertical: 17, horizontal: 15),
+        border: OutlineInputBorder(
+            borderSide: BorderSide.none,
+            borderRadius: BorderRadius.all(Radius.circular(17.0))),
+        filled: true,
+        hintText: "Alan Seçiniz",
+        hintStyle: TextStyle(
+            fontFamily: themeFontLight,
+            color: AppColors.greyThemeClr,
+            fontSize: 14.0)),
+    isExpanded: true,
+    hint: Text(
+      'Alan Seçiniz',
+      style: TextStyle(fontSize: 16),
+    ),
+    dropdownDecoration: BoxDecoration(
+      borderRadius: BorderRadius.circular(15),
+    ),
+    items: Config.questionTypes
+        .map((item) => DropdownMenuItem<String>(
+      value: item,
+      child: Text(
+        item,
+        style: TextStyle(
+          fontSize: 16,
+          color: AppColors.blackThemeClr,
+        ),
+      ),
+    ))
+        .toList(),
+    validator: (value) {
+      if (value == null) {
+        return 'dropdown_required';
+      }
+    },
+    onChanged: (value) {
+      txtController.text = value!;
+    },
+    onSaved: (value) {
+      selectedValue = value.toString();
+      txtController.text = value!;
+    },
+  );
+}
+
+DropdownButtonFormField2 DropdownFormFieldDegree(
+    TextEditingController txtController) {
+  return DropdownButtonFormField2(
+    decoration: InputDecoration(
+        contentPadding:
+        const EdgeInsets.symmetric(vertical: 17, horizontal: 15),
+        border: OutlineInputBorder(
+            borderSide: BorderSide.none,
+            borderRadius: BorderRadius.all(Radius.circular(17.0))),
+        filled: true,
+        hintText: "Zorluk Derecesi",
+        hintStyle: TextStyle(
+            fontFamily: themeFontLight,
+            color: AppColors.greyThemeClr,
+            fontSize: 14.0)),
+    isExpanded: true,
+    hint: Text(
+      'Zorluk Derecesi',
+      style: TextStyle(fontSize: 16),
+    ),
+    dropdownDecoration: BoxDecoration(
+      borderRadius: BorderRadius.circular(15),
+    ),
+    items: Config.questionDegree
+        .map((item) => DropdownMenuItem<String>(
+      value: item,
+      child: Text(
+        item,
+        style: TextStyle(
+          fontSize: 16,
+          color: AppColors.blackThemeClr,
+        ),
+      ),
+    ))
+        .toList(),
+    validator: (value) {
+      if (value == null) {
+        return 'dropdown_required';
+      }
+    },
+    onChanged: (value) {
+      txtController.text = value!;
+    },
+    onSaved: (value) {
+      selectedValue = value.toString();
+      txtController.text = value!;
+    },
   );
 }

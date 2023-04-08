@@ -10,6 +10,9 @@ class Config {
   static String displayName = '';
   static String key ="";
   static String? selectedValue;
+  static String? myImage;
+  static String? questionKey;
+  static bool? page;
 
 
   static Future <Widget> loading() async{
@@ -37,6 +40,21 @@ class Config {
     var encodedText = utf8.encode(text);
     return utf8.decode(encodedText);
   }
+
+
+  static List<String> questionTypes = [
+    'Flutter',
+    'Unity',
+
+  ];
+
+  static List<String> questionDegree = [
+    '1',
+    '2',
+    '3',
+    '4',
+
+  ];
 
 
 }

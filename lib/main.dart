@@ -1,7 +1,9 @@
+import 'package:appjam_f61/view/bottom_nav_bar.dart';
+import 'package:appjam_f61/view/login.dart';
+import 'package:appjam_f61/view/register.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-import 'login.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

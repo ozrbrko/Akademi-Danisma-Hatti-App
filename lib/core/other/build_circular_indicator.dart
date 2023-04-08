@@ -19,7 +19,7 @@ class BuildCircularIndicatorWidget extends StatelessWidget {
           const SizedBox(
             width: 16.0,
           ),
-          Text("loading", style: TextStyle(fontFamily: themeFontSemiBold, color: AppColors.greyThemeClr, fontSize: 16.0),
+          Text("Yükleniyor", style: TextStyle(fontFamily: themeFontSemiBold, color: AppColors.greyThemeClr, fontSize: 16.0),
           ),
         ],
       ),

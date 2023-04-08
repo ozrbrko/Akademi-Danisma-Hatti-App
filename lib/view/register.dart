@@ -1,12 +1,12 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import '../core/components/widgets/widgets.dart';
 import '../core/constants/colors.dart';
 import '../core/constants/fonts.dart';
 import '../core/constants/images.dart';
 import '../core/responsive/frame_size.dart';
 import '../core/services/auth_service.dart';
-import 'core/components/widgets/widgets.dart';
 import 'login.dart';
 
 class RegisterPage extends StatefulWidget {
@@ -142,7 +142,6 @@ class _RegisterPageState extends State<RegisterPage> {
                                     print("Not Validated"),
                                   }
                               })),
-                  // not: zaten hesabım bar
 
                   Padding(
                     padding: const EdgeInsets.all(12.0),
