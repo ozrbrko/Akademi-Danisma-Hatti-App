@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
         return Future.value(true);
       },
       child: Scaffold(
-          appBar: customAppBar(context, false, "Akademiye Danış", true),
+          appBar: customAppBar(context, false, "Akademik Tayfa", true),
           body: Container(
             height: FrameSize.screenHeight,
             width: FrameSize.screenWidth,
