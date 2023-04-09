@@ -233,9 +233,7 @@ DropdownButtonFormField2 DropdownFormFieldType(
       'Alan Seçiniz',
       style: TextStyle(fontSize: 16),
     ),
-    dropdownDecoration: BoxDecoration(
-      borderRadius: BorderRadius.circular(15),
-    ),
+
     items: Config.questionTypes
         .map((item) => DropdownMenuItem<String>(
       value: item,
@@ -283,9 +281,7 @@ DropdownButtonFormField2 DropdownFormFieldDegree(
       'Zorluk Derecesi',
       style: TextStyle(fontSize: 16),
     ),
-    dropdownDecoration: BoxDecoration(
-      borderRadius: BorderRadius.circular(15),
-    ),
+
     items: Config.questionDegree
         .map((item) => DropdownMenuItem<String>(
       value: item,
