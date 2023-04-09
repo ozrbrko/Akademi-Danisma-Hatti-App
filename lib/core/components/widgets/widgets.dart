@@ -29,7 +29,7 @@ TextFormField customTextFormField(
 
       validator: MultiValidator([
         RequiredValidator(errorText: required),
-        EmailValidator(errorText: 'valid_email_address'),
+        EmailValidator(errorText: 'Lütfen geçerli bir e-posta giriniz !'),
       ]),
       decoration: InputDecoration(
           contentPadding:
@@ -57,7 +57,7 @@ TextFormField customTextFormField(
 
       validator: MultiValidator([
         RequiredValidator(errorText: required),
-        MinLengthValidator(8, errorText: 'password_must')
+        MinLengthValidator(8, errorText: 'Şifre en az 8 basamaklı olmalıdır !')
       ]),
       decoration: InputDecoration(
           contentPadding:

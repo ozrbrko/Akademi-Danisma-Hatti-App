@@ -97,7 +97,7 @@ class _LoginState extends State<Login> {
 
                                           customTextFormField("E-posta", loginInputController, "E-posta zorunludur!", TextInputType.text, false, "mail"),
                                           SizedBox(height: 20,),
-                                          customTextFormField("Şifre", passwordInputController, "Şifre zorunludur!", TextInputType.text, false, "password"),
+                                          customTextFormField("Şifre", passwordInputController, "Şifre zorunludur!", TextInputType.text, true, "password"),
 
 
                                           SizedBox(height: 30,),
