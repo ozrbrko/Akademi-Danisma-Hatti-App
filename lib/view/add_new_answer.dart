@@ -53,7 +53,7 @@ class _AddNewAnswerState extends State<AddNewAnswer> {
 
 
 
-                  customTextFormField("Cevap Açıklaması", answerContextInputController, "Bu alan zorunludur!", TextInputType.text, false, "false"),
+                  customTextFormField("Cevap Açıklaması", answerContextInputController, "Bu alan zorunludur !", TextInputType.text, false, "false"),
 
                   SizedBox(height: 40),
 

@@ -73,24 +73,24 @@ class _RegisterPageState extends State<RegisterPage> {
                   ),
 
                   customTextFormField("Ad", nameInputController,
-                      "name_required", TextInputType.text, false, "false"),
+                      "Ad Zorunludur !", TextInputType.text, false, "false"),
                   SizedBox(
                     height: 20,
                   ),
                   customTextFormField("Soyad", surnameInputController,
-                      "surname_required", TextInputType.text, false, "false"),
+                      "Soyad Zorunludur !", TextInputType.text, false, "false"),
                   SizedBox(
                     height: 20,
                   ),
                   customTextFormField("E-posta", mailInputController,
-                      "email_required", TextInputType.text, false, "mail"),
+                      "E-posta Zorunludur !", TextInputType.text, false, "mail"),
                   SizedBox(
                     height: 20,
                   ),
                   customTextFormField(
                       "Şifre",
                       passwordInputController,
-                      "password_required",
+                      "Şifre Zorunludur !",
                       TextInputType.text,
                       true,
                       "password"),
@@ -150,7 +150,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         TextSpan(
                             text: "Zaten Hesabım Var! ",
                             style: TextStyle(
-                                color: AppColors.appThemeClr,
+                                color: AppColors.darkBlueThemeClr,
                                 fontFamily: themeFontMedium,
                                 fontSize: 16)),
                         TextSpan(

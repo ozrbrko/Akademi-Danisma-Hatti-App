@@ -57,7 +57,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
             ),
             activeItem: Icon(
               Icons.home_filled,
-              color: Colors.blueAccent,
+              color: Color(0xff34A853),
             ),
             itemLabel: 'Page 1',
 
@@ -70,7 +70,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
             ),
             activeItem: Icon(
               Icons.add,
-              color: Colors.white,
+              color: Color(0xff34A853),
             ),
             itemLabel: 'Page 2',
           ),
@@ -83,7 +83,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
             ),
             activeItem: Icon(
               Icons.question_answer_outlined,
-              color: Colors.white,
+              color: Color(0xff34A853),
             ),
             itemLabel: 'Page 3',
           ),

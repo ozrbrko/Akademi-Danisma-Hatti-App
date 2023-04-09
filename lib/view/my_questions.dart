@@ -109,26 +109,31 @@ class _MyQuestionsState extends State<MyQuestions> {
 
                                                             Text(
                                                               overflow: TextOverflow.ellipsis,
-                                                              question.question_writer!,
-                                                              style: TextStyle(color: Color(0xff4285F4),fontFamily: themeFontBold,fontSize: 16),
-                                                            ),
-
-                                                            SizedBox(height: 2,),
-
-
-                                                            Text(
-                                                              overflow: TextOverflow.ellipsis,
                                                               question.question_context!,
-                                                              style: TextStyle(color: AppColors.appThemeClr,fontFamily: themeFontRegular,fontSize: 14),
+                                                              style: TextStyle(color: AppColors.darkBlueThemeClr,fontFamily: themeFontRegular,fontSize: 14),
                                                             ),
+
+
                                                             SizedBox(height: 2,),
 
-                                                            Text(
-                                                              overflow: TextOverflow.ellipsis,
-                                                              question.question_title!,
-                                                              style: TextStyle(color: AppColors.appThemeClr,fontFamily: themeFontLight,fontSize: 13),
-                                                            ),
+                                                            Row(
+                                                              children: [
+                                                                Text(
+                                                                  overflow: TextOverflow.ellipsis,
+                                                                  question.question_writer!,
+                                                                  style: TextStyle(color: Color(0xff4285F4),fontFamily: themeFontRegular,fontSize: 16),
+                                                                ),
 
+                                                                SizedBox(width: 2,),
+
+
+                                                                Text(
+                                                                  overflow: TextOverflow.ellipsis,
+                                                                  " - ${question.question_title!}",
+                                                                  style: TextStyle(color: AppColors.darkBlueThemeClr,fontFamily: themeFontRegular,fontSize: 14),
+                                                                ),
+                                                              ],
+                                                            ),
 
 
 
@@ -149,7 +154,7 @@ class _MyQuestionsState extends State<MyQuestions> {
                                                     IconButton(
                                                       icon: Icon(
                                                         Icons.info_outline_rounded,
-                                                        color: AppColors.appThemeClr,
+                                                        color: AppColors.darkBlueThemeClr,
                                                       ),
 
                                                       onPressed: () {

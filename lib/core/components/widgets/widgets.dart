@@ -250,7 +250,7 @@ DropdownButtonFormField2 DropdownFormFieldType(
         .toList(),
     validator: (value) {
       if (value == null) {
-        return 'dropdown_required';
+        return 'Bu alan zorunludur !';
       }
     },
     onChanged: (value) {
@@ -300,7 +300,7 @@ DropdownButtonFormField2 DropdownFormFieldDegree(
         .toList(),
     validator: (value) {
       if (value == null) {
-        return 'dropdown_required';
+        return 'Bu alan zorunludur !';
       }
     },
     onChanged: (value) {
