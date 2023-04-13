@@ -9,7 +9,8 @@ Screenshots of App
  
  
 
-![Screenshot_1661758027](https://user-images.githubusercontent.com/46723964/187222651-d992b3d8-a272-4ddf-a2f6-139f7a88895f.png)
-![Screenshot_1661758031](https://user-images.githubusercontent.com/46723964/187222660-d2780adb-8cba-4090-9ae8-717cfd017677.png)
-![Screenshot_1661758037](https://user-images.githubusercontent.com/46723964/187222662-266ef3eb-3421-4c90-a90e-122cef8ab527.png)
-![Screenshot_1681367858](https://user-images.githubusercontent.com/46723964/231675588-cb544dfa-98bb-4f25-abcf-44eddc9c65c1.png)
+<img src="https://user-images.githubusercontent.com/46723964/231675588-cb544dfa-98bb-4f25-abcf-44eddc9c65c1.png" width="400" height="300" />
+![Screenshot_1681367866](https://user-images.githubusercontent.com/46723964/231675670-d66fc89c-dcc6-47b1-ad99-cbcc8d234dad.png)
+![Screenshot_1681367887](https://user-images.githubusercontent.com/46723964/231675685-8537dda9-0df5-4235-885f-378d6e03d73b.png)
+![Screenshot_1681367892](https://user-images.githubusercontent.com/46723964/231675690-fbe7094d-a66e-4c6b-a8be-b34dc2d33902.png)
+![Screenshot_1681367910](https://user-images.githubusercontent.com/46723964/231675695-aaa5aa4f-2610-4d84-a36e-195c8a31188e.png)
