@@ -5,7 +5,7 @@ I used Firebase for authentication and database operations.
 
 * The purpose of this application is to find solutions for developers who have problems while coding by uploading their problems to this application.
 
-Screenshots of App
+Screenshots of App 
  
 
 <div style="display:flex;">
